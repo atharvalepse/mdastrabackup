@@ -35,8 +35,8 @@ const ServiceHero = ({
     label: 'Book an Appointment',
   },
   secondaryCta = {
-    href: 'tel:+19199490131',
-    label: 'Contact Us: +1 919 949-0131',
+    href: 'tel:+18557500568',
+    label: 'Contact Us: +1 855-750-0568',
   },
 }) => {
   return (

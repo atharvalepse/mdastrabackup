@@ -342,8 +342,8 @@ const GoogleAds = () => {
           label: 'Book a Free Google Ads Strategy Call',
         }}
         secondaryCta={{
-          href: 'tel:+19199490131',
-          label: 'Contact Us: +1 919 949-0131',
+          href: 'tel:+18557500568',
+          label: 'Contact Us: +1 855-750-0568',
         }}
       />
 
@@ -404,7 +404,7 @@ const GoogleAds = () => {
         }
         subtext="MD Astra builds Google Ads campaigns around buyer intent — not guesswork. Get a free audit and see exactly where your budget is being wasted."
         cta1={{ href: 'https://booking.mdastra.com/Consultation', label: 'Get a Free Google Ads Audit' }}
-        cta2={{ href: 'tel:+19199490131', label: 'Call +1 919 949-0131' }}
+        cta2={{ href: 'tel:+18557500568', label: 'Call +1 855-750-0568' }}
         cta3={{ href: '#contact', label: 'Send Us a Message' }}
       />
 

@@ -28,8 +28,8 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Phone Number',
-      content: '+1 919 949-0131',
-      link: 'tel:+19199490131',
+      content: '+1 855-750-0568',
+      link: 'tel:+18557500568',
       color: '#7c5cff'
     },
     {

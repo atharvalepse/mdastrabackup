@@ -49,7 +49,7 @@ const CTA = () => {
               Start a Live Chat
             </motion.a>
             <motion.a
-              href="tel:+19199490131"
+              href="tel:+18557500568"
               className="btn btn-secondary btn-lg"
               initial={{ opacity: 0, x: 20 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}

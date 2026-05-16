@@ -301,7 +301,7 @@ const TermsOfService = () => {
               </div>
               <div className="terms-contact-item">
                 <Phone size={20} />
-                <a href="tel:+19199490131">+1 919 949-0131</a>
+                <a href="tel:+18557500568">+1 855-750-0568</a>
               </div>
             </div>
             <div className="terms-hours">

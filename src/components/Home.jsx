@@ -391,8 +391,8 @@ function Home() {
                 Book an Appointment
                 <ArrowRight size={18} />
               </a>
-              <a href="tel:+19199490131" className="btn btn-secondary btn-lg">
-                Contact Us: +1 919 949-0131
+              <a href="tel:+18557500568" className="btn btn-secondary btn-lg">
+                Contact Us: +1 855-750-0568
               </a>
             </motion.div>
           </div>
@@ -686,7 +686,7 @@ function Home() {
                 Book an Appointment
               </motion.a>
               <motion.a
-                href="tel:+19199490131"
+                href="tel:+18557500568"
                 className="btn btn-secondary btn-lg"
                 initial={{ opacity: 0, x: 20 }}
                 animate={ctaInView ? { opacity: 1, x: 0 } : {}}

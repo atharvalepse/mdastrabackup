@@ -268,8 +268,8 @@ const LocalServiceBusiness = () => {
           label: 'Book a Free Strategy Call',
         }}
         secondaryCta={{
-          href: 'tel:+19199490131',
-          label: 'Contact Us: +1 919 949-0131',
+          href: 'tel:+18557500568',
+          label: 'Contact Us: +1 855-750-0568',
         }}
       />
 
@@ -559,7 +559,7 @@ const LocalServiceBusiness = () => {
         }
         subtext="If you want more calls, better lead quality, and predictable local growth, MD Astra is ready to be your marketing partner."
         cta1={{ href: 'https://booking.mdastra.com/Consultation', label: 'Book a Free Strategy Call' }}
-        cta2={{ href: 'tel:+19199490131', label: 'Call +1 919 949-0131' }}
+        cta2={{ href: 'tel:+18557500568', label: 'Call +1 855-750-0568' }}
         cta3={{ href: '#contact', label: 'Send Us a Message' }}
       />
       <Contact />

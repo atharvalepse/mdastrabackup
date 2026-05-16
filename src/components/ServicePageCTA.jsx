@@ -23,8 +23,8 @@ const ServicePageCTA = ({
     label: 'Book a Free Consultation',
   },
   cta2 = {
-    href: 'tel:+19199490131',
-    label: 'Call +1 919 949-0131',
+    href: 'tel:+18557500568',
+    label: 'Call +1 855-750-0568',
   },
   cta3 = {
     href: '#contact',

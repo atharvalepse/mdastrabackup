@@ -122,9 +122,9 @@ const Benefits = () => {
             <strong>transparent, predictable, and focused on attracting qualified customers</strong>
             —not just clicks.
           </p>
-          <a href="tel:+19199490131" className="btn btn-primary">
+          <a href="tel:+18557500568" className="btn btn-primary">
             <Phone size={18} />
-            Contact Us: +1 919 949-0131
+            Contact Us: +1 855-750-0568
           </a>
         </motion.div>
       </div>

@@ -99,14 +99,14 @@ const WhyChooseUs = () => {
             </motion.ul>
 
             <motion.a
-              href="tel:+19199490131"
+              href="tel:+18557500568"
               className="btn btn-primary"
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.7 }}
             >
               <Phone size={18} />
-              Contact Us: +1 919 949-0131
+              Contact Us: +1 855-750-0568
             </motion.a>
           </motion.div>
 

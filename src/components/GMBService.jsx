@@ -341,8 +341,8 @@ const GMBService = () => {
           label: 'Book a Free GMB Strategy Call',
         }}
         secondaryCta={{
-          href: 'tel:+19199490131',
-          label: 'Contact Us: +1 919 949-0131',
+          href: 'tel:+18557500568',
+          label: 'Contact Us: +1 855-750-0568',
         }}
       />
 
@@ -402,7 +402,7 @@ const GMBService = () => {
         }
         subtext="Most businesses leave thousands of calls and visits on the table with an unoptimized profile. MD Astra changes that — fast."
         cta1={{ href: 'https://booking.mdastra.com/Consultation', label: 'Book a Free GMB Audit' }}
-        cta2={{ href: 'tel:+19199490131', label: 'Call +1 919 949-0131' }}
+        cta2={{ href: 'tel:+18557500568', label: 'Call +1 855-750-0568' }}
         cta3={{ href: '#contact', label: 'Send Us a Message' }}
       />
 

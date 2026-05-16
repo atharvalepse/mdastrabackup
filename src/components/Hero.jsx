@@ -86,8 +86,8 @@ const Hero = () => {
               Book an Appointment
               <ArrowRight size={18} />
             </a>
-            <a href="tel:+19199490131" className="btn btn-secondary btn-lg">
-              Contact Us: +1 919 949-0131
+            <a href="tel:+18557500568" className="btn btn-secondary btn-lg">
+              Contact Us: +1 855-750-0568
             </a>
           </motion.div>
 

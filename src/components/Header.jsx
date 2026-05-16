@@ -88,9 +88,9 @@ const Header = () => {
       <div className="top-bar">
         <div className="container top-bar-content">
           <div className="top-bar-left">
-            <a href="tel:+19199490131" className="top-bar-item">
+            <a href="tel:+18557500568" className="top-bar-item">
               <Phone size={14} />
-              <span>+1 919 949-0131</span>
+              <span>+1 855-750-0568</span>
             </a>
             <a href="mailto:info@mdastra.com" className="top-bar-item">
               <Mail size={14} />

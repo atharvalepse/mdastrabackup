@@ -6,7 +6,7 @@
 
 /* Main Footer */
 .footer-main {
-  padding: clamp(3rem, 8vw, 5rem) 0;
+  padding: clamp(2.5rem, 5vw, 4rem) 0;
 }
 
 .footer-grid {

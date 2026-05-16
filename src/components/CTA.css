@@ -1,7 +1,7 @@
 /* CTA Section */
 .cta-section {
   position: relative;
-  padding: clamp(2.5rem, 5vw, 3.5rem) 0;
+  padding: clamp(2rem, 4vw, 3rem) 0;
   background: var(--color-primary);
 }
 

@@ -39,7 +39,7 @@
   --font-body: 'DM Sans', -apple-system, sans-serif;
 
   /* Spacing */
-  --section-padding: clamp(2.5rem, 5vw, 3.5rem);
+  --section-padding: clamp(2rem, 4vw, 3rem);
   --container-max: 1200px;
   --container-padding: clamp(1.25rem, 4vw, 2rem);
 
@@ -237,7 +237,7 @@ h1, h2, h3, h4, h5, h6 {
 .section-header {
   text-align: center;
   max-width: 680px;
-  margin: 0 auto 2.5rem;
+  margin: 0 auto 2rem;
 }
 
 .section-header .overline {

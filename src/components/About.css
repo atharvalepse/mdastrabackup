@@ -5,8 +5,8 @@
 
 /* Hero */
 .about-hero {
-  padding-top: clamp(1.5rem, 3vw, 2.5rem);
-  padding-bottom: 2rem;
+  padding-top: clamp(1rem, 2vw, 1.5rem);
+  padding-bottom: 1.5rem;
 }
 
 .about-hero-title {
@@ -44,7 +44,7 @@
 }
 
 .about-partner-content {
-  padding: 3rem;
+  padding: 2rem 2.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -87,7 +87,7 @@
 .about-values-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  gap: 2rem;
   align-items: center;
 }
 

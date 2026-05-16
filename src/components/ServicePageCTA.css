@@ -6,7 +6,7 @@
 .svc-cta-banner {
   position: relative;
   background: linear-gradient(135deg, #1a1a2e 0%, #2d1b69 50%, #1a1a2e 100%);
-  padding: clamp(3rem, 6vw, 4.5rem) 0;
+  padding: clamp(2rem, 4vw, 3rem) 0;
   overflow: hidden;
 }
 

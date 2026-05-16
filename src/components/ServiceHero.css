@@ -10,8 +10,8 @@
   z-index: 3;
   display: flex;
   justify-content: center;
-  gap: 2.5rem;
-  padding: 1.5rem var(--container-padding);
+  gap: 2rem;
+  padding: 1rem var(--container-padding);
   max-width: var(--container-max);
   margin: 0 auto;
   flex-wrap: wrap;

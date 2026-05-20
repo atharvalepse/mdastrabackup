@@ -102,14 +102,12 @@ const Contact = () => {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="contact-form-card">
-              <div className="contact-form-header">
-                <h3>Start Your Journey Today!!</h3>
-                <p>Fill out the form and we'll get back to you within 24 hours.</p>
-              </div>
-
-              <LeadConnectorForm />
+            <div className="contact-form-header">
+              <h3>Start Your Journey Today!!</h3>
+              <p>Fill out the form and we'll get back to you within 24 hours.</p>
             </div>
+
+            <LeadConnectorForm />
           </motion.div>
         </div>
       </div>

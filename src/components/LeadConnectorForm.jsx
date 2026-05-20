@@ -1,6 +1,5 @@
 'use client'
 import { useEffect } from 'react';
-import './LeadConnectorForm.css';
 
 const LeadConnectorForm = () => {
   useEffect(() => {
@@ -42,25 +41,23 @@ const LeadConnectorForm = () => {
   }, []);
 
   return (
-    <div className="lead-connector-wrapper">
-      <iframe
-        src="https://api.leadconnectorhq.com/widget/form/dDvTFDgECVLq4k1LsCBq"
-        className="lead-connector-iframe"
-        id="inline-dDvTFDgECVLq4k1LsCBq"
-        data-layout="{'id':'INLINE'}"
-        data-trigger-type="alwaysShow"
-        data-trigger-value=""
-        data-activation-type="alwaysActivated"
-        data-activation-value=""
-        data-deactivation-type="neverDeactivate"
-        data-deactivation-value=""
-        data-form-name="Website Form"
-        data-height="964"
-        data-layout-iframe-id="inline-dDvTFDgECVLq4k1LsCBq"
-        data-form-id="dDvTFDgECVLq4k1LsCBq"
-        title="Website Form"
-      ></iframe>
-    </div>
+    <iframe
+      src="https://api.leadconnectorhq.com/widget/form/dDvTFDgECVLq4k1LsCBq"
+      id="inline-dDvTFDgECVLq4k1LsCBq"
+      style={{ width: '100%', border: 'none' }}
+      scrolling="no"
+      data-layout="{'id':'INLINE'}"
+      data-trigger-type="alwaysShow"
+      data-trigger-value=""
+      data-activation-type="alwaysActivated"
+      data-activation-value=""
+      data-deactivation-type="neverDeactivate"
+      data-deactivation-value=""
+      data-form-name="Website Form"
+      data-layout-iframe-id="inline-dDvTFDgECVLq4k1LsCBq"
+      data-form-id="dDvTFDgECVLq4k1LsCBq"
+      title="Website Form"
+    ></iframe>
   );
 };
 

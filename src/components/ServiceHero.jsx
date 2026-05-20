@@ -121,14 +121,12 @@ const ServiceHero = ({
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3 }}
         >
-          <div className="hero-form-card">
-            <div className="hero-form-header">
-              <h3>{formTitle}</h3>
-              <p>{formSubtitle}</p>
-            </div>
-
-            <LeadConnectorForm />
+          <div className="hero-form-header">
+            <h3>{formTitle}</h3>
+            <p>{formSubtitle}</p>
           </div>
+
+          <LeadConnectorForm />
         </motion.div>
       </div>
 

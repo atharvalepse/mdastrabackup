@@ -257,9 +257,9 @@ const Header = () => {
             <Link href="/contact" className="btn btn-primary" onClick={() => window.scrollTo({ top: 0, behavior: 'instant' })}>
               Contact Us
             </Link>
-            <a href="https://booking.mdastra.com/Consultation" target="_blank" rel="noopener noreferrer" className="btn btn-primary" onClick={() => window.scrollTo({ top: 0, behavior: 'instant' })}>
+            <Link href="/book" className="btn btn-primary" onClick={() => window.scrollTo({ top: 0, behavior: 'instant' })}>
               Book an Appointment
-            </a>
+            </Link>
             <button
               className="mobile-menu-btn"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -424,9 +424,9 @@ const Header = () => {
                 Contact Us
               </Link>
 
-              <a href="https://booking.mdastra.com/Consultation" target="_blank" rel="noopener noreferrer" className="btn btn-primary mobile-cta" onClick={() => { setIsMobileMenuOpen(false); window.scrollTo({ top: 0, behavior: 'instant' }); }}>
+              <Link href="/book" className="btn btn-primary mobile-cta" onClick={() => { setIsMobileMenuOpen(false); window.scrollTo({ top: 0, behavior: 'instant' }); }}>
                 Book an Appointment
-              </a>
+              </Link>
             </nav>
           </motion.div>
         )}

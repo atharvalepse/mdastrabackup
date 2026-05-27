@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowRight, TrendingUp, MapPin, BarChart3, CheckCircle } from 'lucide-react';
 import LeadConnectorForm from './LeadConnectorForm';
@@ -82,10 +83,10 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <a href="https://booking.mdastra.com/Consultation" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg">
+            <Link href="/book" className="btn btn-primary btn-lg">
               Book an Appointment
               <ArrowRight size={18} />
-            </a>
+            </Link>
             <a href="tel:+18557500568" className="btn btn-secondary btn-lg">
               Contact Us: +1 855-750-0568
             </a>

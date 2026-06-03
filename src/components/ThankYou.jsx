@@ -1,18 +1,10 @@
 'use client'
-import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { CheckCircle2, Calendar, Mail, ArrowLeft, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
 import './ThankYou.css';
 
 const ThankYou = () => {
-  useEffect(() => {
-    // Fire the Facebook Pixel 'Lead' event on thank you page mount
-    if (typeof window !== 'undefined' && window.fbq) {
-      window.fbq('track', 'Lead');
-    }
-  }, []);
-
   return (
     <main className="thankyou-page">
       {/* Background blobs for aesthetics */}

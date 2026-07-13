@@ -27,12 +27,13 @@ const ServicePageCTA = ({
     label: 'Call +1 855-750-0568',
   },
   cta3 = {
-    href: '#contact',
+    href: '/contact',
     label: 'Send Us a Message',
   },
 }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-80px' });
+  const resolvedCta3Href = cta3.href === '#contact' ? '/contact' : cta3.href;
 
   return (
     <section className="svc-cta-banner" ref={ref}>
@@ -90,7 +91,7 @@ const ServicePageCTA = ({
               {cta2.label}
             </a>
 
-            <a href={cta3.href} className="btn svc-cta-btn-outline">
+            <a href={resolvedCta3Href} className="btn svc-cta-btn-outline">
               {cta3.label}
             </a>
           </motion.div>

@@ -1,0 +1,74 @@
+/*
+ * IndustryArt.css — sizing + motion for the dimensional industry hero scenes.
+ * Motion is what gives the art its "living" feel: a slow-bobbing hero object,
+ * parallax-floating chips at varied phases, orbiting particles and twinkling
+ * sparkles.
+ */
+
+.industry-art {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.industry-art svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+/* hero object + chips float on gentle, offset cycles */
+@keyframes iaFloatA {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes iaFloatB {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(9px); }
+}
+
+.ia-center { animation: iaFloatA 7s ease-in-out infinite; }
+.ia-float-1 { animation: iaFloatA 5s ease-in-out infinite; }
+.ia-float-2 { animation: iaFloatB 6.2s ease-in-out infinite; }
+.ia-float-3 { animation: iaFloatA 7.4s ease-in-out infinite 0.4s; }
+.ia-float-4 { animation: iaFloatB 5.6s ease-in-out infinite 0.25s; }
+
+/* ambient particles orbit the scene center */
+@keyframes iaOrbit {
+  to { transform: rotate(360deg); }
+}
+
+.ia-orbit { animation: iaOrbit 44s linear infinite; }
+
+/* soft breathing spotlight glow */
+@keyframes iaPulse {
+  0%, 100% { opacity: 0.55; }
+  50% { opacity: 0.9; }
+}
+
+.ia-pulse { animation: iaPulse 4.5s ease-in-out infinite; }
+
+/* twinkling sparkles */
+@keyframes iaTwinkle {
+  0%, 100% { opacity: 0.25; transform: scale(0.7); }
+  50% { opacity: 1; transform: scale(1); }
+}
+
+.ia-twinkle {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: iaTwinkle 3s ease-in-out infinite;
+}
+.ia-t1 { animation-delay: 0s; }
+.ia-t2 { animation-delay: 0.9s; }
+.ia-t3 { animation-delay: 1.8s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .ia-center,
+  .ia-float-1, .ia-float-2, .ia-float-3, .ia-float-4,
+  .ia-orbit, .ia-pulse, .ia-twinkle {
+    animation: none;
+  }
+}

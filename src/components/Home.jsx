@@ -24,10 +24,10 @@ import {
   Headphones,
   Star
 } from 'lucide-react';
-import LeadConnectorForm from './LeadConnectorForm';
 import CaseStudies from './CaseStudies';
 import Testimonials from './Testimonials';
 import Contact from './Contact';
+import HeroArt from './HeroArt';
 import './Hero.css';
 import './Home.css';
 import './CTA.css';
@@ -398,14 +398,12 @@ function Home() {
           </div>
 
           <motion.div
-            className="hero-form-wrapper"
+            className="hero-image-wrapper"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
           >
-            <div className="hero-form-card">
-              <LeadConnectorForm />
-            </div>
+            <HeroArt variant="home" />
           </motion.div>
         </div>
 

@@ -15,7 +15,7 @@ const Footer = () => {
     { label: 'Content Marketing', href: '/services/content-marketing' },
     { label: 'Social Media Marketing', href: '/services/social-media-marketing' },
     { label: 'Google Ads', href: '/services/google-ads' },
-    { label: 'Contact', href: '/#contact' }
+    { label: 'Contact', href: '/contact' }
   ];
 
   const locations = [
@@ -126,10 +126,10 @@ const Footer = () => {
               <ul className="footer-links">
                 {locations.map((location) => (
                   <li key={location}>
-                    <a href="/#contact">
+                    <Link href="/contact" onClick={() => window.scrollTo({ top: 0, behavior: 'instant' })}>
                       {location}
                       <ArrowUpRight size={14} />
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

@@ -562,7 +562,7 @@ const CaseStudyPage = ({ slug }) => {
               </div>
               <p className="cs-conclusion-text">{study.conclusion}</p>
               <div className="cs-conclusion-cta">
-                <Link href="/#contact" className="btn btn-primary btn-lg" onClick={() => window.scrollTo({ top: 0, behavior: 'instant' })}>
+                <Link href="/contact" className="btn btn-primary btn-lg" onClick={() => window.scrollTo({ top: 0, behavior: 'instant' })}>
                   Get Similar Results
                   <ArrowRight size={18} />
                 </Link>

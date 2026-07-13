@@ -299,7 +299,7 @@ const CaseStudiesPage = () => {
               Let MD Astra build a custom growth strategy for your business.
               Schedule a free consultation today.
             </p>
-            <Link href="/#contact" className="btn btn-primary btn-lg">
+            <Link href="/contact" className="btn btn-primary btn-lg">
               Get Started
               <ArrowUpRight size={18} />
             </Link>

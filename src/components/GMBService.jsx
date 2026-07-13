@@ -659,7 +659,7 @@ const GMBService = () => {
             <p>
               If you want more calls, visits, and visibility from Google Maps, MD Astra is built to deliver.
             </p>
-            <a href="#contact" className="btn btn-primary btn-lg">
+            <a href="/contact" className="btn btn-primary btn-lg">
               <Phone size={20} />
               Book a Free GMB Growth Strategy Call
             </a>

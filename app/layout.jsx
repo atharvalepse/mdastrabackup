@@ -26,7 +26,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${dmSans.variable} ${instrumentSerif.variable}`} suppressHydrationWarning>
-      <head />
+      <head>
+        <meta name="google-site-verification" content="8L_JV81TCJAFurlsRJheMh1ESG_05Stc2YEGHl8Zf9c" />
+      </head>
       <body>
         <ScrollToTop />
         <Header />

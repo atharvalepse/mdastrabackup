@@ -2,9 +2,16 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, CheckCircle } from 'lucide-react';
-import LeadConnectorForm from './LeadConnectorForm';
+import { usePathname } from 'next/navigation';
+import HeroArt from './HeroArt';
+import IndustryArt from './IndustryArt';
 import './Hero.css';
 import './ServiceHero.css';
+
+const INDUSTRY_VARIANTS = new Set([
+  'healthcare', 'restaurant', 'real-estate', 'ecommerce',
+  'local-service', 'legal-services', 'education', 'fashion',
+]);
 
 /**
  * ServiceHero — replicates the SEO Hero design for all service pages.
@@ -39,6 +46,27 @@ const ServiceHero = ({
     label: 'Contact Us: +1 855-750-0568',
   },
 }) => {
+  const pathname = usePathname();
+
+  // Map pathname to a HeroArt variant (custom on-brand SVG panels)
+  let variant = 'seo'; // Default fallback
+  if (pathname) {
+    if (pathname.includes('/services/seo')) variant = 'seo';
+    else if (pathname.includes('/services/website-development')) variant = 'website-development';
+    else if (pathname.includes('/services/gmb')) variant = 'gmb';
+    else if (pathname.includes('/services/content-marketing')) variant = 'content-marketing';
+    else if (pathname.includes('/services/social-media-marketing')) variant = 'social-media-marketing';
+    else if (pathname.includes('/services/google-ads')) variant = 'google-ads';
+    else if (pathname.includes('/industries/healthcare')) variant = 'healthcare';
+    else if (pathname.includes('/industries/restaurant')) variant = 'restaurant';
+    else if (pathname.includes('/industries/real-estate')) variant = 'real-estate';
+    else if (pathname.includes('/industries/ecommerce')) variant = 'ecommerce';
+    else if (pathname.includes('/industries/local-service')) variant = 'local-service';
+    else if (pathname.includes('/industries/legal-services')) variant = 'legal-services';
+    else if (pathname.includes('/industries/education')) variant = 'education';
+    else if (pathname.includes('/industries/fashion')) variant = 'fashion';
+  }
+
   return (
     <section className="hero">
       {/* Video Background */}
@@ -114,14 +142,16 @@ const ServiceHero = ({
           </motion.div>
         </div>
 
-        {/* Right — Form Card */}
+        {/* Right — Hero Art: rich illustration for industries, dashboard panel for services */}
         <motion.div
-          className="hero-form-wrapper"
+          className="hero-image-wrapper"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3 }}
         >
-          <LeadConnectorForm />
+          {INDUSTRY_VARIANTS.has(variant)
+            ? <IndustryArt variant={variant} />
+            : <HeroArt variant={variant} />}
         </motion.div>
       </div>
 

@@ -39,7 +39,7 @@ const CTA = () => {
 
           <div className="cta-buttons">
             <motion.a
-              href="#contact"
+              href="/contact"
               className="btn btn-primary btn-lg"
               initial={{ opacity: 0, x: -20 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}

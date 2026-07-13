@@ -1,0 +1,63 @@
+/*
+ * HeroArt.css
+ * The panel chrome (.hero-dashboard-card, .dashboard-*) is inherited from Hero.css
+ * so every hero visual matches the home card exactly. This file only adds the
+ * SVG visual sizing and a few subtle accents.
+ */
+
+.hero-art-card {
+  margin: 0 auto;
+}
+
+/* SVG visual fills the card body edge-to-edge */
+.hero-art-visual {
+  width: 100%;
+}
+
+.hero-art-visual svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+/* Pulsing "live" dot inside the status badge */
+.dashboard-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ha-live-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.6);
+  animation: haLivePulse 2s ease-out infinite;
+}
+
+@keyframes haLivePulse {
+  0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.5); }
+  70% { box-shadow: 0 0 0 7px rgba(16, 185, 129, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+}
+
+/* Soft breathing glow on highlighted accents inside the SVG */
+.ha-glow {
+  animation: haGlow 3s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes haGlow {
+  0%, 100% { opacity: 0.18; }
+  50% { opacity: 0.4; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ha-live-dot,
+  .ha-glow {
+    animation: none;
+  }
+}

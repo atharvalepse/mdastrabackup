@@ -569,7 +569,7 @@ const ContentMarketing = () => {
               MD Astra is ready to lead the strategy.
             </p>
             <motion.a
-              href="#contact"
+              href="/contact"
               className="btn btn-primary btn-lg"
               initial={{ opacity: 0, y: 20 }}
               animate={ctaInView ? { opacity: 1, y: 0 } : {}}

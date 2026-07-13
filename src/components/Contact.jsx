@@ -12,9 +12,17 @@ import {
   AlertCircle
 } from 'lucide-react';
 import LeadConnectorForm from './LeadConnectorForm';
+import { usePathname } from 'next/navigation';
 import './Contact.css';
 
 const Contact = () => {
+  const pathname = usePathname();
+  const isContactPage = pathname && (pathname === '/contact' || pathname === '/contact/');
+  
+  if (!isContactPage) {
+    return null;
+  }
+  
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 

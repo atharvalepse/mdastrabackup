@@ -588,7 +588,7 @@ const WebsiteDevelopment = () => {
               If your business needs a website that <strong>converts, scales, and supports digital marketing</strong>, MD Astra is ready to help.
             </p>
             <div className="websitedev-cta-actions">
-              <a href="#contact" className="btn btn-primary">
+              <a href="/contact" className="btn btn-primary">
                 <Calendar size={18} />
                 Book a Free Website Strategy Call
               </a>

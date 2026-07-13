@@ -126,7 +126,7 @@ const About = () => {
                 ))}
               </ul>
               <motion.a
-                href="#contact"
+                href="/contact"
                 className="btn btn-primary"
                 initial={{ opacity: 0, y: 10 }}
                 animate={partnerInView ? { opacity: 1, y: 0 } : {}}

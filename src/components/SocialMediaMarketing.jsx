@@ -574,7 +574,7 @@ const SocialMediaMarketing = () => {
               If you want social media marketing that drives leads, sales, and brand authority—not just
               engagement—MD Astra is ready to scale your growth.
             </p>
-            <a href="#contact" className="btn btn-primary btn-lg">
+            <a href="/contact" className="btn btn-primary btn-lg">
               <MessageCircle size={20} />
               Book a Free Social Media Strategy Call
             </a>

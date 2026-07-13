@@ -663,7 +663,7 @@ const GoogleAds = () => {
               If you want Google Ads that are built for <strong>conversions, efficiency,
               and scalable growth</strong>, MD Astra is ready to lead your paid search strategy.
             </p>
-            <a href="#contact" className="btn btn-primary btn-lg">
+            <a href="/contact" className="btn btn-primary btn-lg">
               <Phone size={20} />
               Book a Free Google Ads Strategy Call
             </a>
